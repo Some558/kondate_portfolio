@@ -22,9 +22,7 @@ require __DIR__.'/auth.php';
 
 Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     //管理画面トップページ
-    Route::get('top', function () {
-        return view('admin.top');
-    })->name('top');
+    Route::get('top', [MenuOptionsController::class,'top'])->name('top');
 
     //献立管理
     Route::prefix('menu_options')->name('menu_options.')->group(function(){
@@ -32,5 +30,7 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
         Route::get('create' , [MenuOptionsController::class, 'create'])->name('create');
         //献立新規登録処理
         Route::post('store' , [MenuOptionsController::class, 'store'])->name('store');
+        //献立編集画面
+        Route::get('{menu_optionId}',[MenuOptionsController::class, 'show'])->name('show');
     });
 });
