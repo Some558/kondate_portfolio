@@ -15,8 +15,8 @@
 
 <h2>使用技術</h2>
 <ul>
-  <li><strong>フロントエンド</strong>: HTML, CSS, JavaScript, Vue.js</li>
-  <li><strong>バックエンド</strong>: Laravel, PHP</li>
+  <li><strong>フロントエンド</strong>: HTML, CSS, JavaScript</li>
+  <li><strong>バックエンド</strong>: PHP, Laravel</li>
   <li><strong>データベース</strong>: MySQL</li>
   <li><strong>その他</strong>: Docker（Laravel Sail）、Git</li>
 </ul>
@@ -39,14 +39,10 @@
 
 <h2>今後の改善点</h2>
 <ul>
-    <li><strong>カレンダー機能</strong>: 過去1ヶ月分のカレンダーを表示させる</li>
+    <li><strong>カレンダー機能</strong>: 過去1ヶ月分のカレンダーを表示予定。</li>
     <li><strong>献立ジャンル分け</strong>: 肉や魚をジャンルで分けて表示することでユーザビリティを向上予定。</li>
 </ul>
 
-<h2>ライセンス</h2>
-<p>
-  このプロジェクトはMITライセンスのもとで公開されています。詳細については、<a href="./LICENSE">LICENSE</a>ファイルを参照してください。
-</p>
 
 <h2>作者</h2>
 <ul>
