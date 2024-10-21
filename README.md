@@ -48,6 +48,12 @@
 <p>こちらは管理画面として、管理ユーザーのみが編集可能なページ（にする予定）です。</p>
 <p>ユーザーが献立を手入力する手間を省略するため、あらかじめ多くの献立候補を設定してあります。</p>
 
+<h2>データベーステーブル</h2>
+<img width="932" alt="スクリーンショット 2024-10-21 21 53 13" src="https://github.com/user-attachments/assets/3cc8f8b3-3ee5-4ac5-aa6a-8fc2b2a8da09">
+
+<h2>ER図</h2>
+<img width="707" alt="スクリーンショット 2024-10-21 22 12 23" src="https://github.com/user-attachments/assets/50b27077-f1d5-49bd-be51-2643565cf7cb">
+
 <h2>今後の改善点</h2>
 <ul>
     <li><strong>カレンダー機能</strong>: 過去1ヶ月分のカレンダーを表示予定。</li>
