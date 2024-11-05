@@ -6,14 +6,14 @@
         </a>
         <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <button
-                onclick="location.href='{{ route('user.index') }}'"
+                onclick="location.href='{{ route('user.indexall') }}'"
                 class="mr-5 hover:text-gray-300">
-                マイ献立追加・削除
+                マイ献立確認
             </button>
             <button
-                onclick="location.href='{{ route('admin.top') }}'"
+                onclick="location.href='{{ route('user.dishes') }}'"
                 class="mr-5 hover:text-gray-300">
-                献立候補編集
+                マイ献立編集
             </button>
             <form method="POST" action="{{ route('logout') }}" class="inline">
                 @csrf

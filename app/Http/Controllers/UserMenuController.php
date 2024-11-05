@@ -76,7 +76,7 @@ class UserMenuController extends Controller
         $userMenus = UserMenu::where('user_id', auth()->id())->get();
         $userDishes = UserDishes::where('user_id', auth()->id())->get();
 
-        return view('user.dishes', [
+        return view('user.menuindex', [
             'menu_options' => $menu_options,
             'mainMenus' => $mainMenus,
             'subMenus' => $subMenus,
