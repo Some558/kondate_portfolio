@@ -14,7 +14,7 @@ Route::get('/', function () {
 
 // ユーザー画面
 Route::prefix('user')->name('user.')->middleware('auth')->group(function() {
-    // 献立ページ表示
+    // 献立一覧ページ表示
     Route::get('index/all', [UserMenuController::class, 'indexall'])->name('indexall');
     // 週間献立ページ表示
     Route::get('index', [UserMenuController::class, 'index'])->name('index');
