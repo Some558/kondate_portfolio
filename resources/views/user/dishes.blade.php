@@ -16,7 +16,7 @@
     <div class="container mx-auto px-4 py-6">
         <!-- 献立候補を手動で追加するセクション -->
         <div class="mb-4">
-            <h1 class="text-2xl font-bold text-gray-800">献立候補を手動で追加する</h1>
+            <h1 class="text-2xl font-bold text-gray-800">献立候補からマイ献立を手動で追加する</h1>
         </div>
         <form method="POST" action="{{ route('admin.menu_options.store') }}">
             @csrf
@@ -42,7 +42,7 @@
                     @endfor
                     <div class="p-6 w-full">
                         <button type="submit" class="flex mx-auto text-white bg-green-500 border-0 py-3 px-10 focus:outline-none hover:bg-green-600 rounded-lg text-lg transition duration-300 ease-in-out transform hover:scale-105">
-                            献立登録
+                            献立候補を追加する
                         </button>
                     </div>
                 </div>
@@ -54,9 +54,9 @@
         <!-- 献立候補を選択するセクション -->
         <div class="flex justify-between items-center mb-4">
             <h1 class="text-2xl font-bold text-gray-800">献立候補からマイ献立を選択してください</h1>
-            <p>チェックボックスにチェックを入れた後、保存して下さい。</p>
+            <p>チェックボックスにチェックを入れた後、下にスクロールして保存して下さい。</p>
             <a href="{{ route('user.index') }}" class="bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-3 rounded-full transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-                献立選択画面に戻る
+                週間献立画面に戻る
             </a>
         </div>
 
@@ -120,10 +120,10 @@
             <!-- ボタン -->
             <div class="text-center mt-6 flex justify-center space-x-4">
                 <button type="submit" formaction="{{ route('user.dishes.bulkStore') }}" class="text-white bg-green-500 hover:bg-green-600 py-2 px-8 rounded-lg text-lg">
-                    選択した献立を保存
+                    選択したメニューをマイ献立に保存
                 </button>
                 <button type="submit" formaction="{{ route('user.dishes.bulkDelete') }}" class="text-white bg-red-500 hover:bg-red-600 py-2 px-8 rounded-lg text-lg">
-                    選択した献立を削除
+                    選択したメニューをマイ献立から削除
                 </button>
             </div>
         </form>
