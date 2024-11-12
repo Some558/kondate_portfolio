@@ -56,21 +56,23 @@ class UserMenuController extends Controller
         // 献立候補を取得
         $menu_options = MenuOptions::all();
 
-        // メインメニューを取得
+        // メインメニューを取得し、あいうえお順にソート
         $mainMenus = UserDishes::with('menuOption')
             ->where('user_id', auth()->id())
             ->whereHas('menuOption', function($query) {
                 $query->where('dish_type', 'main');
             })
             ->get();
+        $mainMenus = $this->sortByJapanese($mainMenus);
 
-        // サブメニューを取得
+        // サブメニューを取得し、あいうえお順にソート
         $subMenus = UserDishes::with('menuOption')
             ->where('user_id', auth()->id())
             ->whereHas('menuOption', function($query) {
                 $query->where('dish_type', 'sub');
             })
             ->get();
+        $subMenus = $this->sortByJapanese($subMenus);
 
         // 現在のユーザーの献立を取得
         $userMenus = UserMenu::where('user_id', auth()->id())->get();
@@ -83,6 +85,13 @@ class UserMenuController extends Controller
             'userMenus' => $userMenus,
             'userDishes' => $userDishes
         ]);
+    }
+        private function sortByJapanese($collection)
+    {
+        return $collection->sort(function($a, $b) {
+            $collator = new \Collator('ja_JP');
+            return $collator->compare($a->menuOption->dish_name, $b->menuOption->dish_name);
+        });
     }
 
     /**

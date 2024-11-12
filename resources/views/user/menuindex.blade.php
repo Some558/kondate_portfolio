@@ -21,19 +21,15 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($userDishes->groupBy('menuOption.dish_type') as $type => $dishes)
-                            @if ($type == 'main')
-                                @foreach ($dishes as $index => $mainDish)
-                                    <tr class="border-b hover:bg-gray-50">
-                                        <td class="px-4 py-3 text-gray-800">
-                                            {{ $mainDish->menuOption->dish_name ?? '' }}
-                                        </td>
-                                        <td class="px-4 py-3 text-gray-800">
-                                            {{ $userDishes->where('menuOption.dish_type', 'sub')->skip($index)->first()->menuOption->dish_name ?? '' }}
-                                        </td>
-                                    </tr>
-                                @endforeach
-                            @endif
+                        @foreach ($mainMenus as $index => $mainDish)
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-4 py-3 text-gray-800">
+                                    {{ $mainDish->menuOption->dish_name ?? '' }}
+                                </td>
+                                <td class="px-4 py-3 text-gray-800">
+                                    {{ $subMenus->skip($index)->first()->menuOption->dish_name ?? '' }}
+                                </td>
+                            </tr>
                         @endforeach
                     </tbody>
                 </table>
