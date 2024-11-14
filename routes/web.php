@@ -46,6 +46,7 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
+// 管理画面
 Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     // 管理画面トップページ
     Route::get('top', [MenuOptionsController::class,'top'])->name('top');
