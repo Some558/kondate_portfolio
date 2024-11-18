@@ -73,7 +73,7 @@ use App\Models\MenuOptions;
                                 <h2 class="text-2xl font-bold text-gray-900 mb-4">新しいメニューを選択</h2>
                                 <p class="text-gray-600 mb-4">お好みのメニューを選択するか、ランダムに生成できます。<br>※マイ献立で選択した物だけが選択可能</p>
                             </div>
-
+                            {{-- メインメニューとサブメニューのデータ抽出 --}}
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 <div>
                                     <h3 class="font-semibold mb-4 text-lg">メインメニュー <i class="fas fa-drumstick-bite ml-2 text-yellow-500"></i></h3>
