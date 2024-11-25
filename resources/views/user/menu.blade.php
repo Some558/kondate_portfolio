@@ -104,7 +104,7 @@ use App\Models\MenuOptions;
                                     </select>
                                 </div>
                             </div>
-
+                                <!-- 選択したメニューを保存 -->
                             <div class="mt-8 flex space-x-4">
                                 <button type="submit" class="keep flex-1 bg-green-400 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
                                     <i class="fas fa-save mr-2"></i>選択したメニューを保存
@@ -134,7 +134,7 @@ use App\Models\MenuOptions;
         </div>
     </div>
 
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
