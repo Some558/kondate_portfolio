@@ -16,7 +16,7 @@ use App\Models\MenuOptions;
                 <p class="text-gray-600">1週間の献立を簡単に計画できます</p>
             </div>
 
-            <!-- タブナビゲーション -->
+            <!-- タブナビゲーション 曜日切り替え-->
             <div id="tabs" class="flex justify-around space-x-2 rounded-full bg-yellow-500/20 p-2 mb-8">
                 @foreach(['Mon', 'Tues', 'Wednes', 'Thurs', 'Fri', 'Satur', 'Sun'] as $day)
                     <div class="tab w-full rounded-full py-3 text-lg font-semibold leading-5 text-red-400 cursor-pointer text-center hover:bg-yellow-500 hover:text-white transition duration-300" data-tab="{{ $day }}">
