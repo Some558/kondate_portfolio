@@ -1,4 +1,5 @@
 <x-user-layout>
+    {{-- successセッションがあった場合は、成功と表示される --}}
     @if (session('success'))
         <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-2 mb-3 text-xs" role="alert">
             <p class="font-bold">成功</p>
