@@ -6,7 +6,7 @@
             <p>{{ session('success') }}</p>
         </div>
     @endif
-
+        {{-- errorセッションがあった場合は、エラーと表示される --}}
     @if (session('error'))
         <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-2 mb-3 text-xs" role="alert">
             <p class="font-bold">エラー</p>
