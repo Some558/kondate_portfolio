@@ -19,6 +19,7 @@
         <div class="mb-4">
             <h1 class="text-2xl font-bold text-gray-800">献立候補からマイ献立を手動で追加する</h1>
         </div>
+        {{-- 手動で献立を入力して登録する --}}
         <form method="POST" action="{{ route('admin.menu_options.store') }}">
             @csrf
             <div class="lg:w-1/2 md:w-2/3 mx-auto">
