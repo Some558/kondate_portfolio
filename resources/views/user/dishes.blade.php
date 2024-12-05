@@ -17,7 +17,7 @@
     <div class="container mx-auto px-4 py-6">
         <!-- 献立候補を手動で追加するセクション -->
         <div class="mb-4">
-            <h1 class="text-2xl font-bold text-gray-800">献立候補からマイ献立を手動で追加する</h1>
+            <h1 class="text-2xl font-bold text-gray-800">献立候補を入力し手動で追加する</h1>
         </div>
         {{-- 手動で献立を入力して登録する --}}
         <form method="POST" action="{{ route('admin.menu_options.store') }}">

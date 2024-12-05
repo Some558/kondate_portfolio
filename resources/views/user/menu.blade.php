@@ -8,7 +8,7 @@ use App\Models\MenuOptions;
     <div class="alert alert-danger text-red-500">
         {{ session('error') }}
     </div>
-@endif
+    @endif
     <div class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -40,7 +40,7 @@ use App\Models\MenuOptions;
                                         ['title' => 'サブメニュー2', 'key' => 'sub_dish2_id', 'icon' => '🥘']
                                     ];
                                 @endphp
-
+                                {{-- 献立タイプを繰り返しmealに格納する --}}
                                 @foreach($mealTypes as $meal)
                                     <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-4 border border-white border-opacity-20">
                                         <div class="flex items-center mb-2">
