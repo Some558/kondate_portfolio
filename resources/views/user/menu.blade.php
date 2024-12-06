@@ -123,6 +123,7 @@ use App\Models\MenuOptions;
                 </div>
             @endforeach
 
+            {{-- 一週間分をランダムに表示するメソッド。うまく動作しないため修正中。 --}}
             {{-- <div class="mt-12 text-center">
                 <form action="{{ route('user.menu.weekrandom') }}" method="POST" class="inline-block">
                     @csrf
