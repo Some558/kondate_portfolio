@@ -21,6 +21,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                        {{-- 献立タイプの順番を入れ替える --}}
                         @foreach ($userDishes->groupBy('menuOption.dish_type') as $type => $dishes)
                             @if ($type == 'main')
                                 @foreach ($dishes as $index => $mainDish)
