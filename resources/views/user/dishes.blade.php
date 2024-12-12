@@ -42,6 +42,7 @@
                             </div>
                         </div>
                     @endfor
+                    {{-- 献立候補追加ボタン --}}
                     <div class="p-6 w-full">
                         <button type="submit" class="flex mx-auto text-white bg-green-500 border-0 py-3 px-10 focus:outline-none hover:bg-green-600 rounded-lg text-lg transition duration-300 ease-in-out transform hover:scale-105">
                             献立候補を追加する
