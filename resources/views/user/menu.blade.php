@@ -11,6 +11,7 @@ use App\Models\MenuOptions;
     @endif
     <div class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {{-- 大見出し --}}
             <div class="text-center mb-12">
                 <h1 class="text-4xl font-bold text-gray-900 mb-2">今週の献立</h1>
                 <p class="text-gray-600">1週間の献立を簡単に計画できます</p>
