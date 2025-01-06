@@ -3,7 +3,7 @@ use App\Models\UserDishes;
 use App\Models\MenuOptions;
 @endphp
 <x-user-layout>
-    {{-- もしセッションにエラーが格納されていたら、エラー文が出力される。 --}}
+    {{-- もしセッションにエラーが格納されていたら、エラー文が出力される。  --}}
     @if (session('error'))
     <div class="alert alert-danger text-red-500">
         {{ session('error') }}
