@@ -120,11 +120,12 @@
                 </div>
             </div>
 
-            <!-- ボタン -->
+            <!-- 保存ボタン -->
             <div class="text-center mt-6 flex justify-center space-x-4">
                 <button type="submit" formaction="{{ route('user.dishes.bulkStore') }}" class="text-white bg-green-500 hover:bg-green-600 py-2 px-8 rounded-lg text-lg">
                     選択したメニューをマイ献立に保存
                 </button>
+            <!-- 削除ボタン -->
                 <button type="submit" formaction="{{ route('user.dishes.bulkDelete') }}" class="text-white bg-red-500 hover:bg-red-600 py-2 px-8 rounded-lg text-lg">
                     選択したメニューをマイ献立から削除
                 </button>
