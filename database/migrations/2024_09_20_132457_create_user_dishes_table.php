@@ -12,14 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         if (!Schema::hasTable('user_dishes')) {
-        Schema::create('user_dishes', function (Blueprint $table) {
-            $table->bigIncrements('user_menu_id');
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->foreignId('menu_option_id')->constrained('menu_options')->onDelete('cascade'); // menu_optionsのidを外部キーとして設定
-            $table->timestamps();
-        });
+            Schema::create('user_dishes', function (Blueprint $table) {
+                $table->id();
+                $table->foreignId('user_id')->constrained()->onDelete('cascade');
+                $table->foreignId('menu_option_id')->constrained('menu_options')->onDelete('cascade');
+                $table->timestamps();
+            });
+        }
     }
-    }
+
     /**
      * Reverse the migrations.
      */

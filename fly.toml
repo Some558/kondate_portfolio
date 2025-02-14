@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for kondate-portfolio-thrumming-river-8885 on 2025-02-07T09:06:59+09:00
+# fly.toml app configuration file generated for kondate-portfolio-withered-leaf-8580 on 2025-02-14T23:37:19+09:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'kondate-portfolio-thrumming-river-8885'
+app = 'kondate-portfolio-withered-leaf-8580'
 primary_region = 'nrt'
 console_command = 'php /var/www/html/artisan tinker'
 
